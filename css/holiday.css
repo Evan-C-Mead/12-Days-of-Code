@@ -1,0 +1,33 @@
+body {
+    background: forestgreen;
+}
+
+#main-jumbotron {
+    background: darkred;
+    color: black;
+    padding: 1em;
+}
+
+#main-jumbotron-paragraph {
+    font-size: xx-large;
+}
+
+#song-container {
+    margin: 2em;
+    padding: 1em;
+}
+
+#body-footer-hr {
+    border: 1px solid black;
+    margin: 0;
+}
+
+#main-footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+#main-footer-span {
+    color: black;
+}
