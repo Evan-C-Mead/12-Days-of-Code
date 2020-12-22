@@ -1,6 +1,15 @@
+html {
+    position: relative;
+    min-height: 100%;
+}
+
 body {
     background: forestgreen;
     margin-bottom: 60px;
+}
+
+main {
+    margin: auto;
 }
 
 #main-jumbotron {
@@ -18,12 +27,11 @@ body {
     padding: 1em;
 }
 
-#body-footer-hr {
-    border: 1px solid black;
-    margin: 0;
+#add-songs-form {
+    margin: 1em;
 }
 
-#main-footer {
+#body-footer-hr {
     position: absolute;
     bottom: 0;
     width: 100%;
