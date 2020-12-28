@@ -1,12 +1,13 @@
 package Christmas;
 
 import java.util.Scanner;
+import java.util.Arrays;
 
 public class Santa {
 
     public static void main(String[] args) {
         askSanta();
-        createReindeer();
+        runReindeerList();
     }
 
     public static void askSanta() {
@@ -40,12 +41,12 @@ public class Santa {
         System.out.printf("\nWell...if you are good, I think I can manage to bring you %s for your Christmas gift!\n", userString);
     }
 
-    public static void createReindeer() {
-        Reindeer reindeer1 = new Reindeer("Dasher");
-        Reindeer reindeer2 = new Reindeer("Prancer");
-
-        System.out.printf("\nSanta's first reinder is %s.", reindeer1.name);
-        System.out.printf("\nSanta's second reindeer is %s.", reindeer2.name);
+    public static void runReindeerList() {
+        Reindeer[] stNicksReindeer = ReindeerArray.reindeerNames();
+        System.out.println("\nThese are Santa's reindeer:");
+        for (Reindeer reindeer : stNicksReindeer) {
+            System.out.println(reindeer.getName());
+        }
     }
 
 }
