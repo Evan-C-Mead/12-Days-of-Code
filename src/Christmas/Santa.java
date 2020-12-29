@@ -8,6 +8,7 @@ public class Santa {
     public static void main(String[] args) {
         askSanta();
         runReindeerList();
+        newReindeerList();
     }
 
     public static void askSanta() {
@@ -47,6 +48,24 @@ public class Santa {
         for (Reindeer reindeer : stNicksReindeer) {
             System.out.println(reindeer.getName());
         }
+    }
+
+    public static void newReindeerList() {
+        Reindeer[] stNicksNewReindeer = ReindeerArray.reindeerNames();
+        Scanner reindeerSC = new Scanner(System.in);
+        System.out.println("\nSanta rescued a reindeer!");
+        System.out.println("Give Santa's newest reindeer a name:");
+        String reindeerName = reindeerSC.nextLine();
+        System.out.println("\nThese are Santa's reindeer:");
+        for (Reindeer reindeer : stNicksNewReindeer) {
+            System.out.printf(reindeer.getName() + "%s", reindeerName);
+        }
+    }
+
+    public static Reindeer[] addReindeer(Reindeer[] newReindeerArray, Reindeer reindeerToAdd) {
+        Reindeer[] tempArray = Arrays.copyOf(newReindeerArray, newReindeerArray.length + 1);
+        tempArray[tempArray.length - 1] = reindeerToAdd;
+        return tempArray;
     }
 
 }

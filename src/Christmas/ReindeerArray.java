@@ -1,5 +1,7 @@
 package Christmas;
 
+import java.util.Arrays;
+
 public class ReindeerArray {
     public static Reindeer[] reindeerNames() {
         return new Reindeer[] {
