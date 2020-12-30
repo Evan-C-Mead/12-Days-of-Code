@@ -62,10 +62,11 @@ public class Santa {
         }
     }
 
-    public static Reindeer[] addReindeer(Reindeer[] newReindeerArray, Reindeer reindeerToAdd) {
-        Reindeer[] tempArray = Arrays.copyOf(newReindeerArray, newReindeerArray.length + 1);
-        tempArray[tempArray.length - 1] = reindeerToAdd;
-        return tempArray;
+    public static Reindeer[] addReindeer(Reindeer[] stNicksReindeer, Reindeer reindeerToAdd) {
+        Reindeer[] stNicksNewReindeer = Arrays.copyOf(stNicksReindeer, stNicksReindeer.length + 1);
+        stNicksNewReindeer[stNicksNewReindeer.length - 1] = reindeerToAdd;
+
+        return stNicksNewReindeer;
     }
 
 }
